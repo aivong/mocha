@@ -229,7 +229,7 @@ beforeEach(function() {
 });
 
 describe('#find()', function() {
-  it('respond with matching records', function() {
+  it('should respond with matching records', function() {
     return db.find({ type: 'User' }).should.eventually.have.length(3);
   });
 });
